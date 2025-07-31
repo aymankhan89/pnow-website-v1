@@ -1,36 +1,6 @@
-// ==========================================
-// 1. DATA FILES
-// ==========================================
+import { EmploymentPageData } from '@/app/components/employer/data/employerData';
 
-// data/employmentData.ts
-export interface JobResponsibility {
-  text: string;
-}
-
-export interface Category {
-  id: number;
-  title: string;
-  image: string;
-  jobTitle: string;
-  location: string;
-  qualifications: string;
-  responsibilities: JobResponsibility[];
-}
-
-export interface EmploymentPageData {
-  servicesSection: {
-    title: string;
-    subtitle: string;
-    description: string;
-    additionalInfo: string;
-  };
-  gridSection: {
-    headerText: string;
-    categories: Category[];
-  };
-}
-
-export const employmentData: Record<string, EmploymentPageData> = {
+export const employeesData: Record<string, EmploymentPageData> = {
   'permanent-employees': {
     servicesSection: {
       title: 'Permanent',
@@ -400,8 +370,7 @@ export const employmentData: Record<string, EmploymentPageData> = {
   },
 };
 
-// Default/fallback data
-export const defaultEmploymentData: EmploymentPageData = {
+export const defaultEmployeesData: EmploymentPageData = {
   servicesSection: {
     title: 'Employers',
     subtitle: 'Services',
