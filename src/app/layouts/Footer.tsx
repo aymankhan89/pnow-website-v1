@@ -213,9 +213,9 @@ const Locations = () => {
   );
 };
 
-const Websleak = () => {
+const PrivacyPolicy = () => {
   return (
-    <div className='flex base:flex-col md:flex-row lg:items-center lg:justify-between base:px-[30px] lg:px-[100px] py-[30px] text-[#ACB1E0] text-[16px] font-semibold'>
+    <div className='flex base:flex-col md:flex-row lg:items-center justify-center lg:justify-between base:px-[30px] lg:px-[100px] py-[30px] text-[#ACB1E0] text-[16px] font-semibold'>
       <div className='sm:hidden flex flex-col gap-4 text-center'>
         <div className='flex flex-col gap-2'>
           <p className='text-sm'>© ProficientNow 2023</p>
@@ -257,7 +257,7 @@ const Footer = () => (
         <div className='h-[1px] bg-[#FFFFFFB2]' />
         <Locations />
         <div className='h-[1px] bg-[#FFFFFFB2]' />
-        <Websleak />
+        <PrivacyPolicy />
       </div>
     </div>
   </div>
