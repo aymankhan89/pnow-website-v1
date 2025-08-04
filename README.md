@@ -3,6 +3,7 @@
 A modern, production-ready web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This repository provides the source code for the PNOW website, featuring a scalable architecture, reusable components, and strong developer tooling.
 
 ## About the Website
+
 **ProficientNow (PNOW)** is a recruitment and talent solutions company founded in June 2021. The website serves as a digital platform to connect employers with top-tier talent and empower job seekers to find rewarding opportunities across diverse industries including IT, Legal, Construction, Architecture, Mechanical, and Manufacturing.
 
 - **Our Journey:** Since inception, ProficientNow has revolutionized recruitment by providing bespoke hiring solutions and seamless connections between employers and talent. Operations span the US, Australia, and India, with plans for further global expansion.
@@ -14,6 +15,7 @@ A modern, production-ready web application built with **Next.js**, **TypeScript*
 The website showcases company values, services, and global reach, and enables employers and job seekers to connect efficiently through a modern, user-friendly interface.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
@@ -23,6 +25,7 @@ The website showcases company values, services, and global reach, and enables em
 - [License](#license)
 
 ## Features
+
 - ⚡️ Next.js 14 (App Router)
 - 🦾 TypeScript
 - 🎨 Tailwind CSS for styling
@@ -32,6 +35,7 @@ The website showcases company values, services, and global reach, and enables em
 - 🌐 SEO and sitemap support
 
 ## Tech Stack
+
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -43,37 +47,44 @@ The website showcases company values, services, and global reach, and enables em
 ## Getting Started
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/) (v18 or above recommended)
 - [pnpm](https://pnpm.io/) (or npm/yarn)
 
 ### Installation
+
 ```bash
 pnpm install
 ```
 
 ### Development
+
 ```bash
 pnpm dev
 ```
 
 ### Production Build
+
 ```bash
 pnpm build
 pnpm start
 ```
 
 ### Linting & Formatting
+
 ```bash
 pnpm lint
 pnpm format
 ```
 
 ### Running Tests
+
 ```bash
 pnpm test
 ```
 
 ## Project Structure
+
 ```
 ├── public/               # Static assets
 ├── src/
@@ -88,6 +99,7 @@ pnpm test
 ```
 
 ## Contributing
+
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 1. Fork the repository
@@ -97,4 +109,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 5. Open a pull request
 
 ## License
+
 [MIT](LICENSE)
