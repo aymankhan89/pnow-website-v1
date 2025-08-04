@@ -1,15 +1,10 @@
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 
 import SplitTextComp from '@/app/components/bits/SplitText';
 
-import ConstructionEstimator from '../../../../public/images/heroImage1.jpg';
-import ConstructionTechnicians from '../../../../public/images/heroImage2.jpg';
-import PipelineEngineer from '../../../../public/images/heroImage3.jpg';
-import SeniorAttorney from '../../../../public/images/heroImage4.jpg';
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLElement>(null);
@@ -142,66 +137,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* ─── FOUR CIRCULAR ICONS ────────────────────────────── */}
-        {/* Top‑left */}
-        <div
-          className='floating-icon absolute top-[260px] left-[80px] hidden lg:flex flex-col items-center'
-          style={{ willChange: 'transform', backfaceVisibility: 'hidden' }}
-        >
-          <Image
-            src={ConstructionEstimator}
-            alt='Construction Estimator'
-            className='w-[120px] h-[120px] rounded-full bg-white object-cover'
-          />
-          <span className='mt-2 bg-white px-2 py-1 rounded-full text-[14px] text-brand-purple whitespace-nowrap antialiased'>
-            Construction Estimator
-          </span>
-        </div>
 
-        {/* Bottom‑left */}
-        <div
-          className='floating-icon absolute bottom-[120px] left-[160px] hidden lg:flex flex-col items-center'
-          style={{ willChange: 'transform', backfaceVisibility: 'hidden' }}
-        >
-          <Image
-            src={ConstructionTechnicians}
-            alt='Construction Technicians'
-            className='w-[120px] h-[120px] rounded-full bg-white object-cover'
-          />
-          <span className='mt-2 bg-white px-2 py-1 rounded-full text-[14px] text-brand-purple whitespace-nowrap antialiased'>
-            Construction Technicians
-          </span>
-        </div>
-
-        {/* Top‑right */}
-        <div
-          className='floating-icon absolute top-[260px] right-[80px] hidden lg:flex flex-col items-center'
-          style={{ willChange: 'transform', backfaceVisibility: 'hidden' }}
-        >
-          <Image
-            src={SeniorAttorney}
-            alt='Senior Attorney'
-            className='w-[120px] h-[120px] rounded-full bg-white object-cover'
-          />
-          <span className='mt-2 bg-white px-2 py-1 rounded-full text-[14px] text-brand-purple whitespace-nowrap antialiased'>
-            Senior Attorney
-          </span>
-        </div>
-
-        {/* Bottom‑right */}
-        <div
-          className='floating-icon absolute bottom-[120px] right-[160px]  hidden lg:flex flex-col items-center'
-          style={{ willChange: 'transform', backfaceVisibility: 'hidden' }}
-        >
-          <Image
-            src={PipelineEngineer}
-            alt='Pipeline Engineer'
-            className='w-[120px] h-[120px] rounded-full bg-white object-cover'
-          />
-          <span className='mt-2 bg-white px-2 py-1 rounded-full text-[14px] text-brand-purple whitespace-nowrap antialiased'>
-            Pipeline Engineer
-          </span>
-        </div>
       </div>
     </section>
   );
