@@ -73,8 +73,7 @@ const EmploymentGrid: React.FC<EmploymentGridProps> = ({
         <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50'>
           <div
             className={`bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh]
-              overflow-hidden transform transition-all duration-300 ${
-                isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+              overflow-hidden transform transition-all duration-300 ${isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               }`}
           >
             {/* Header */}
