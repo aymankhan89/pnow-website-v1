@@ -1,14 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-import { JobSection } from '@/data/jobsdata';
+import { ISectionProps } from '@/app/lib/interfaces/dynamicJobsInterface';
 
-interface SectionProps {
-  section: JobSection;
-  reverse?: boolean;
-}
-
-const SectionBlock: React.FC<SectionProps> = ({ section, reverse = false }) => {
+const JobPageHero: React.FC<ISectionProps> = ({ section, reverse = false }) => {
   const {
     title,
     description,
@@ -53,4 +48,4 @@ const SectionBlock: React.FC<SectionProps> = ({ section, reverse = false }) => {
   );
 };
 
-export default SectionBlock;
+export default JobPageHero;

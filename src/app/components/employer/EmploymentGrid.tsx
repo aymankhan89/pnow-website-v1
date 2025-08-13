@@ -2,14 +2,12 @@
 import { X } from 'lucide-react';
 import React, { useState } from 'react';
 
-import { Category } from '@/app/components/employer/data/employerData';
+import {
+  Category,
+  IEmploymentGridProps,
+} from '@/app/lib/interfaces/employerInterface';
 
-interface EmploymentGridProps {
-  categories: Category[];
-  headerText?: string;
-}
-
-const EmploymentGrid: React.FC<EmploymentGridProps> = ({
+const EmploymentGrid: React.FC<IEmploymentGridProps> = ({
   categories,
   headerText = 'WHAT WE PROVIDE',
 }) => {
@@ -73,7 +71,8 @@ const EmploymentGrid: React.FC<EmploymentGridProps> = ({
         <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50'>
           <div
             className={`bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh]
-              overflow-hidden transform transition-all duration-300 ${isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+              overflow-hidden transform transition-all duration-300 ${
+                isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               }`}
           >
             {/* Header */}

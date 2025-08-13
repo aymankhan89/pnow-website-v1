@@ -1,20 +1,10 @@
 'use client';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { useRef } from 'react';
 
-interface JobModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  item: {
-    title: string;
-    qualifications: string[];
-    responsibilities?: string[];
-    imageSrc: string | StaticImageData;
-    altText?: string;
-  } | null;
-}
+import { IJobModalProps } from '@/app/lib/interfaces/dynamicJobsInterface';
 
-export default function JobModal({ isOpen, onClose, item }: JobModalProps) {
+export default function JobModal({ isOpen, onClose, item }: IJobModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
 
   if (!isOpen || !item) return null;

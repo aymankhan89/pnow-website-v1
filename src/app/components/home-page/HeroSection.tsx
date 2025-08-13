@@ -1,3 +1,4 @@
+'use client';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import Link from 'next/link';
@@ -5,8 +6,7 @@ import React, { useEffect, useRef } from 'react';
 
 import SplitTextComp from '@/app/components/bits/SplitText';
 
-
-const Hero: React.FC = () => {
+const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
@@ -123,24 +123,22 @@ const Hero: React.FC = () => {
           />
 
           <div className='mt-8 flex justify-center space-x-4'>
-            <Link href="/contact" passHref legacyBehavior>
-              <a className="bg-white text-brand-purple px-8 py-3 rounded-full font-semibold text-base hover:opacity-90 flex items-center justify-center">
+            <Link href='/contact' passHref legacyBehavior>
+              <a className='bg-white text-brand-purple px-8 py-3 rounded-full font-semibold text-base hover:opacity-90 flex items-center justify-center'>
                 Find Works
               </a>
             </Link>
 
-            <Link href="/contact" passHref legacyBehavior>
-              <a className="bg-brand-red text-white px-8 py-3 rounded-full font-semibold text-base hover:opacity-90 flex items-center justify-center">
+            <Link href='/contact' passHref legacyBehavior>
+              <a className='bg-brand-red text-white px-8 py-3 rounded-full font-semibold text-base hover:opacity-90 flex items-center justify-center'>
                 Hire Talents Now
               </a>
             </Link>
           </div>
         </div>
-
-
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;

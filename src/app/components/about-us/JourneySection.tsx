@@ -1,42 +1,13 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import growthIllustration from '../../../../public/images/growthIllustration.png';
-
-interface SectionItem {
-  id: string;
-  headingLines: string[];
-  description: string;
-  buttonText: string;
-  imageSrc: StaticImageData;
-  imageAlt: string;
-  imageWidth: number;
-  imageHeight: number;
-}
-
-const SECTION_DATA: SectionItem[] = [
-  {
-    id: 'our-journey',
-    headingLines: [
-      'Our Journey:',
-      'Empowering Careers,',
-      'Transforming Businesses',
-    ],
-    description:
-      "Since our founding in June 2021, we've revolutionized recruitment by providing bespoke hiring solutions across diverse industries. From the US IT sector to Legal, Construction, Architecture, Mechanical, and Manufacturing, our vision drives seamless connections between employers and top-tier talent.",
-    buttonText: "Let's go!",
-    imageSrc: growthIllustration,
-    imageAlt: 'Growth illustration',
-    imageWidth: 400,
-    imageHeight: 300,
-  },
-];
+import { JOURNEY_DATA } from '@/app/lib/dummyData/journeyData';
 
 const JourneySection: React.FC = () => {
   return (
     <>
-      {SECTION_DATA.map(
+      {JOURNEY_DATA.map(
         ({
           id,
           headingLines,
@@ -62,7 +33,7 @@ const JourneySection: React.FC = () => {
                 <p className='text-gray-600 text-base leading-relaxed mb-6'>
                   {description}
                 </p>
-                <Link href="/contact" passHref legacyBehavior>
+                <Link href='/contact' passHref legacyBehavior>
                   <a className='bg-brand-purple text-white text-lg px-6 py-2 rounded-full hover:bg-[#2b0a86] transition'>
                     {buttonText}
                   </a>

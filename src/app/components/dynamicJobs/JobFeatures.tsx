@@ -1,13 +1,8 @@
 import React from 'react';
 
-import { JobFeature } from '@/data/jobsdata';
+import { IFeatureGridProps } from '@/app/lib/interfaces/dynamicJobsInterface';
 
-interface FeatureGridProps {
-  description: string;
-  items: JobFeature[];
-}
-
-const FeatureGrid: React.FC<FeatureGridProps> = ({ description, items }) => (
+const FeatureGrid: React.FC<IFeatureGridProps> = ({ description, items }) => (
   <section className='py-8 px-4 md:px-8 bg-white'>
     <div className='max-w-6xl mx-auto text-center'>
       <p className='text-gray-500 max-w-6xl text-left mb-12 text-md'>

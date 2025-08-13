@@ -1,16 +1,13 @@
-// eslint-disable-next-line simple-import-sort/imports
+'use client';
 import { Cpu, GitBranch, UserCheck, Users } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
+
+import { IVisionPoint } from '@/app/lib/interfaces/heroSectioninterfaces';
+
 import ourVision from '../../../../public/images/ourVision.png';
 
-interface VisionPoint {
-  title: string;
-  description: string;
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-}
-
-const visionPoints: VisionPoint[] = [
+const visionPoints: IVisionPoint[] = [
   {
     title: 'Support Employers',
     description: 'Provide professional and executive talent to organizations',

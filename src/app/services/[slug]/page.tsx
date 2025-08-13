@@ -1,17 +1,17 @@
-// src/app/employer/[slug]/page.tsx
 import React from 'react';
 
+import { EmployerHero, EmploymentGrid } from '@/app/components/employer';
+import {
+  CoreValues,
+  MissionSection,
+  ResearchSection,
+  Vision,
+} from '@/app/components/home-page';
 import {
   defaultEmploymentData,
   employmentData,
-  EmploymentPageData,
-} from '@/app/components/employer/data/employerData';
-import EmployerHero from '@/app/components/employer/EmployerHero';
-import EmploymentGrid from '@/app/components/employer/EmploymentGrid';
-import CoreValues from '@/app/components/home-page/CoreValues';
-import MissionSection from '@/app/components/home-page/MissionSection';
-import ResearchSection from '@/app/components/home-page/ResearchSection';
-import OurVision from '@/app/components/home-page/Vision';
+} from '@/app/lib/dummyData/employerData';
+import { IEmploymentPageData } from '@/app/lib/interfaces/employerInterface';
 
 interface PageProps {
   params: {
@@ -19,7 +19,6 @@ interface PageProps {
   };
 }
 
-// 1. Tell Next.js which pages to pre-render
 export async function generateStaticParams() {
   return Object.keys(employmentData).map((slug) => ({ slug }));
 }
@@ -27,23 +26,15 @@ export async function generateStaticParams() {
 const ServicesPage: React.FC<PageProps> = ({ params }) => {
   const { slug } = params;
 
-  // 2. Pick the matching data or fallback
-  const data: EmploymentPageData =
+  const data: IEmploymentPageData =
     employmentData[slug] ?? defaultEmploymentData;
 
-  // (optional) If you’d rather 404 on unknown slugs:
-  // if (!employmentData[slug]) {
-  //   notFound();
-  // }
-
-  const { servicesSection, gridSection } = data;
+  const { gridSection } = data;
 
   return (
     <main>
-      {/* Services hero section */}
       <EmployerHero />
 
-      {/* Jobs grid */}
       <EmploymentGrid
         headerText={gridSection.headerText}
         categories={gridSection.categories}
@@ -51,7 +42,7 @@ const ServicesPage: React.FC<PageProps> = ({ params }) => {
       <ResearchSection />
       <MissionSection />
       <CoreValues />
-      <OurVision />
+      <Vision />
     </main>
   );
 };

@@ -151,18 +151,21 @@ const IndustriesSection: React.FC = () => {
                     <Icon
                       size={32}
                       strokeWidth={1.5}
-                      className={`transition-all duration-300 ${isHighlighted ? 'text-white scale-125' : 'text-current'
-                        }`}
+                      className={`transition-all duration-300 ${
+                        isHighlighted ? 'text-white scale-125' : 'text-current'
+                      }`}
                     />
                     <h3
-                      className={`mt-6 text-xl font-semibold transition-colors duration-300 ${isHighlighted ? 'text-white' : 'text-gray-900'
-                        }`}
+                      className={`mt-6 text-xl font-semibold transition-colors duration-300 ${
+                        isHighlighted ? 'text-white' : 'text-gray-900'
+                      }`}
                     >
                       {label}
                     </h3>
                     <p
-                      className={`mt-2 text-sm transition-colors duration-300 ${isHighlighted ? 'text-indigo-200' : 'text-gray-500'
-                        }`}
+                      className={`mt-2 text-sm transition-colors duration-300 ${
+                        isHighlighted ? 'text-indigo-200' : 'text-gray-500'
+                      }`}
                     >
                       {count} Staffs
                     </p>

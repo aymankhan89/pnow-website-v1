@@ -1,17 +1,15 @@
+'use client';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 
+import { IStat } from '@/app/lib/interfaces/heroSectioninterfaces';
+
 import teamImage from '../../../../public/images/teamImage.png';
 
-interface Stat {
-  value: string;
-  label: string;
-}
-
-const stats: Stat[] = [
+const stats: IStat[] = [
   { value: '73k+', label: 'Resumes' },
   { value: '95%', label: 'Jobs Fulfillment Rate' },
   { value: '12k+', label: 'Jobs Filled' },
@@ -113,9 +111,7 @@ const TransformSection: React.FC = () => {
                 together.
               </p>
               <Link href='/contact' passHref legacyBehavior>
-                <button
-                  className=' w-fit mt-3 bg-brand-purple text-white  inline-block border border-[#0D004D]  rounded-full px-6 py-2 text-sm font-medium '
-                >
+                <button className=' w-fit mt-3 bg-brand-purple text-white  inline-block border border-[#0D004D]  rounded-full px-6 py-2 text-sm font-medium '>
                   Let’s go!
                 </button>
               </Link>
@@ -132,7 +128,8 @@ const TransformSection: React.FC = () => {
          place-items-center sm:place-items-stretch
           max-w-6xl 
           mx-auto 
-          gap-4'        >
+          gap-4'
+        >
           {stats.map((s) => (
             <div
               key={s.label}

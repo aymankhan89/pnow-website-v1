@@ -1,13 +1,9 @@
 import { Grid, Shield, Target, ThumbsUp } from 'lucide-react';
 import React from 'react';
 
-interface CoreValue {
-  title: string;
-  description: string;
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-}
+import { ICoreValue } from '@/app/lib/interfaces/heroSectioninterfaces';
 
-const coreValues: CoreValue[] = [
+const coreValues: ICoreValue[] = [
   {
     title: 'Transparency',
     description:

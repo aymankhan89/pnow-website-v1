@@ -1,25 +1,18 @@
-// eslint-disable-next-line simple-import-sort/imports
 'use client';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
+
+import { ICard } from '@/app/lib/interfaces/heroSectioninterfaces';
 
 import Businessman from '../../../../public/images/Businessman.png';
 import newEmployee from '../../../../public/images/newEmployee.png';
 
-interface Card {
-  title: string;
-  description: string;
-  buttonText: string;
-  href: string;
-  imgSrc: StaticImageData | string;
-  imgAlt: string;
-}
 gsap.registerPlugin(ScrollTrigger);
 
-const cards: Card[] = [
+const cards: ICard[] = [
   {
     title: 'Looking for your next role?',
     description:

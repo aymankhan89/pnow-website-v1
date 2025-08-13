@@ -4,4 +4,4 @@ import chemist from './chemist-pana.png';
 import pharma from './Pharmacist-pana.png';
 import forensic from './forensic-expert.png';
 
-export { drugImg, psychologistImg, chemist , pharma, forensic };
+export { drugImg, psychologistImg, chemist, pharma, forensic };

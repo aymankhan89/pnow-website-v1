@@ -1,33 +1,6 @@
 import Image from 'next/image';
-import { FaBullseye, FaHandshake, FaProjectDiagram } from 'react-icons/fa';
-import { FiMapPin } from 'react-icons/fi';
 
-const ITEMS = [
-  {
-    title: 'Talent Network',
-    desc: 'Utilizing our extensive professional connections',
-    icon: <FaProjectDiagram size={20} />,
-    pos: { side: 'left', pct: 25 },
-  },
-  {
-    title: 'Mutual Success',
-    desc: 'Directing skilled talent toward shared goals',
-    icon: <FaHandshake size={20} />,
-    pos: { side: 'left', pct: 75 },
-  },
-  {
-    title: 'Effective Planning',
-    desc: 'Crafting strategies for client growth',
-    icon: <FaBullseye size={20} />,
-    pos: { side: 'right', pct: 25 },
-  },
-  {
-    title: 'Strategic Placement',
-    desc: 'Matching the right talent to business demands',
-    icon: <FiMapPin size={20} />,
-    pos: { side: 'right', pct: 75 },
-  },
-];
+import { STRATEGY_ITEMS } from '@/app/lib/dummyData/strategyData';
 
 export default function StrategySection() {
   return (
@@ -45,7 +18,7 @@ export default function StrategySection() {
           />
         </div>
 
-        {ITEMS.map(({ title, desc, icon, pos }, idx) => {
+        {STRATEGY_ITEMS.map(({ title, desc, icon, pos }, idx) => {
           const horizontal =
             pos.side === 'left' ? 'left-[-13rem]' : 'right-[-13rem]';
           const vertical = `top-[${pos.pct}%]`;

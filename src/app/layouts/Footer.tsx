@@ -130,15 +130,21 @@ const Locations = () => {
 
                 <div className='text-sm flex flex-col gap-3 justify-center items-center  text-center'>
                   <div>
-                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>ADDRESS</p>
+                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>
+                      ADDRESS
+                    </p>
                     <p className='text-white leading-relaxed'>{item.main}</p>
                   </div>
                   <div>
-                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>EMAIL</p>
+                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>
+                      EMAIL
+                    </p>
                     <p className='text-white'>{item.email}</p>
                   </div>
                   <div>
-                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>CONTACT</p>
+                    <p className='text-[#ACB1E0] text-xs font-medium mb-1'>
+                      CONTACT
+                    </p>
                     <p className='text-white'>{item.contact}</p>
                   </div>
                 </div>
@@ -222,10 +228,16 @@ const PrivacyPolicy = () => {
           <p className='text-sm'>All Rights Reserved.</p>
         </div>
         <div className='flex flex-col gap-3 text-sm font-normal'>
-          <Link href='/privacypolicy' className='hover:text-white transition-colors'>
+          <Link
+            href='/privacypolicy'
+            className='hover:text-white transition-colors'
+          >
             Privacy Policy
           </Link>
-          <Link href='/termsandconditions' className='hover:text-white transition-colors'>
+          <Link
+            href='/termsandconditions'
+            className='hover:text-white transition-colors'
+          >
             Terms and Conditions
           </Link>
         </div>

@@ -1,6 +1,6 @@
-import { EmploymentPageData } from '@/app/components/employer/data/employerData';
+import { IEmploymentPageData } from '@/app/lib/interfaces/employerInterface';
 
-export const employeesData: Record<string, EmploymentPageData> = {
+export const employmentData: Record<string, IEmploymentPageData> = {
   'permanent-employees': {
     servicesSection: {
       title: 'Permanent',
@@ -424,7 +424,8 @@ export const employeesData: Record<string, EmploymentPageData> = {
   },
 };
 
-export const defaultEmployeesData: EmploymentPageData = {
+// Default/fallback data
+export const defaultEmploymentData: IEmploymentPageData = {
   servicesSection: {
     title: 'Employers',
     subtitle: 'Services',

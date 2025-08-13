@@ -3,15 +3,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-import { JobCareers } from '@/data/jobsdata';
-
 import JobModal from '@/app/components/dynamicJobs/JobModel';
+import { ICareerSectionProps } from '@/app/lib/interfaces/dynamicJobsInterface';
 
-interface CareerSectionProps {
-  data: JobCareers;
-}
-
-export default function CareerSection({ data }: CareerSectionProps) {
+export default function CareerSection({ data }: ICareerSectionProps) {
   const [selectedItem, setSelectedItem] = useState<
     null | (typeof data.items)[0]
   >(null);

@@ -1,18 +1,15 @@
+'use client';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
-interface Feature {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  href: string;
-}
+
+import { IFeature } from '@/app/lib/interfaces/heroSectioninterfaces';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const features: Feature[] = [
+const features: IFeature[] = [
   {
     icon: (
       <Image

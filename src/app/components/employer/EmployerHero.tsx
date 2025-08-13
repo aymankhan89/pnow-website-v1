@@ -1,13 +1,8 @@
 import type React from 'react';
 
-interface EmployerHeroProps {
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  additionalInfo?: string;
-}
+import { IEmployerHeroProps } from '@/app/lib/interfaces/employerInterface';
 
-const EmployerHero: React.FC<EmployerHeroProps> = ({
+const EmployerHero: React.FC<IEmployerHeroProps> = ({
   title = 'Employers',
   subtitle = 'Services',
   description = "ProficientNow specializes in sourcing outstanding talent pools for various industries and businesses, placing them in the right positions. Whether you require permanent hires, contract employees, freelancers, temporary staff, remote workers, or executive talent searches, we're your preferred partner.",

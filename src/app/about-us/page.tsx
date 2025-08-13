@@ -1,11 +1,12 @@
-import GlobalPresenceSection from '@/app/components/about-us/GlobalPresenceSection';
-import InnovationSection from '@/app/components/about-us/InnovationSection';
-import JourneySection from '@/app/components/about-us/JourneySection';
-import MissionSection from '@/app/components/about-us/MissionSection';
-import PartnershipSection from '@/app/components/about-us/PartnershipSection';
-import ValuesSection from '@/app/components/about-us/ValuesSection';
-import VisionSection from '@/app/components/about-us/VisionSection';
-import ContactSection from '@/app/components/contact-us/ContactSection';
+import {
+  GlobalPresenceSection,
+  InnovationSection,
+  JourneySection,
+  MissionSection,
+  PartnershipSection,
+  ValuesSection,
+  VisionSection,
+} from '@/app/components/about-us';
 
 export default function AboutUsPage() {
   return (
@@ -18,7 +19,6 @@ export default function AboutUsPage() {
       <PartnershipSection />
       <InnovationSection />
       <GlobalPresenceSection />
-      <ContactSection />
     </>
   );
 }

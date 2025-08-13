@@ -7,10 +7,10 @@ import Link from 'next/link';
 import type React from 'react';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
-import { employeesData } from '@/data/employeesData';
-import { jobs } from '@/data/jobsdata';
+import { employeesData } from '@/app/lib/dummyData/employeesData';
+import { jobs } from '@/app/lib/dummyData/jobsdata';
 
-import { employmentData } from '@/app/components/employer/data/employerData';
+import { employmentData } from '@/app/lib/dummyData/employerData';
 import {
   Accordion,
   AccordionContent,
@@ -119,13 +119,13 @@ export default function NavBar() {
 
   const initialStyles: React.CSSProperties = isDesktop
     ? {
-      width: scrolled ? '100%' : 'calc(100% - 500px)',
-      borderRadius: scrolled ? '0px' : '9999px',
-    }
+        width: scrolled ? '100%' : 'calc(100% - 500px)',
+        borderRadius: scrolled ? '0px' : '9999px',
+      }
     : {
-      width: '100%',
-      borderRadius: '0px',
-    };
+        width: '100%',
+        borderRadius: '0px',
+      };
 
   const positionClasses = isDesktop
     ? scrolled

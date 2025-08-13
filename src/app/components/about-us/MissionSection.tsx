@@ -1,24 +1,7 @@
 'use client';
 import Image from 'next/image';
-import { FaChartLine, FaGlobe, FaStar } from 'react-icons/fa';
 
-const FEATURES = [
-  {
-    title: 'High Quality',
-    description: 'Recruitment services to various industries',
-    icon: <FaStar size={20} />,
-  },
-  {
-    title: 'Agile Growth',
-    description: 'Support clients with executive solutions',
-    icon: <FaChartLine size={20} />,
-  },
-  {
-    title: 'Global Player',
-    description: 'Result oriented with worldwide expansion',
-    icon: <FaGlobe size={20} />,
-  },
-];
+import { FEATURES_DATA } from '@/app/lib/dummyData/featuresData';
 
 export default function MissionSection() {
   return (
@@ -30,7 +13,7 @@ export default function MissionSection() {
         <div className='flex flex-col md:flex-row items-center gap-12'>
           {/* — Left column: features + paragraph */}
           <div className='flex-1 flex flex-col gap-8'>
-            {FEATURES.map(({ title, description, icon }, idx) => (
+            {FEATURES_DATA.map(({ title, description, icon }, idx) => (
               <div key={idx} className='flex items-center gap-4'>
                 {/* SVG chevron shape */}
                 <div className='relative w-16 h-20 flex-shrink-0'>
