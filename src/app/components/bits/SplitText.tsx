@@ -56,7 +56,6 @@ const SplitTextComp: React.FC<SplitTextProps> = ({
         linesClass: 'split-line',
       });
     } catch (error) {
-      console.error('Failed to create SplitText:', error);
       return;
     }
 
@@ -76,7 +75,6 @@ const SplitTextComp: React.FC<SplitTextProps> = ({
     }
 
     if (!targets || targets.length === 0) {
-      console.warn('No targets found for SplitText animation');
       splitter.revert();
       return;
     }

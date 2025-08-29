@@ -7,10 +7,6 @@ import Link from 'next/link';
 import type React from 'react';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
-import { employeesData } from '@/app/lib/dummyData/employeesData';
-import { jobs } from '@/app/lib/dummyData/jobsdata';
-
-import { employmentData } from '@/app/lib/dummyData/employerData';
 import {
   Accordion,
   AccordionContent,
@@ -18,6 +14,9 @@ import {
   AccordionTrigger,
 } from '@/app/components/ui/Accordion';
 import { Dropdown } from '@/app/layouts/Dropdown';
+import { employeesData } from '@/app/lib/dummyData/employeesData';
+import { employmentData } from '@/app/lib/dummyData/employerData';
+import { jobs } from '@/app/lib/dummyData/jobsdata';
 
 import Logo from '../../../public/navbar/pnlogonew.jpg';
 

@@ -9,7 +9,6 @@ import { cn } from '@/app/lib/utils';
 export function SignupFormDemo() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted');
   };
 
   return (
