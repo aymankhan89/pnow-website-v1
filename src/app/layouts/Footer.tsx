@@ -270,7 +270,7 @@ const PrivacyPolicy = () => {
           </Link>
         </div>
       </div>
-      <br className='lg:hidden' />
+      <br className='lg:hidden test' />
     </div>
   );
 };
