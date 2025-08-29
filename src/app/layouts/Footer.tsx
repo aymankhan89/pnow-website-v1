@@ -13,17 +13,30 @@ import {
 import Usa from '../../../public/images/usalogo.jpg';
 import India from '../../../public/images/india.jpg';
 import FooterLogo from '../../../public/images/footerlogo.png';
+import uk from '../../../public/images/uk.png';
 
 const Australia = '/images/auslogo.svg';
 const CountryInd = '/images/charminar.svg';
 const CountryAus = '/images/australia.jpg';
 const CountryUsa = '/images/usalogo.png';
+const CountryUk = '/images/uk.png';
 
 const Locations = () => {
   // your locations data
   const AllLocations = [
     {
       id: '1',
+      country: 'UK',
+      flag: uk,
+      countrylogo: CountryUk,
+      main: '71-75 Shelton Street, Covent Garden, London WC2H 9JQ, United Kingdom',
+      email: 'info@proficientnow.com',
+      contact: '+44 7520 655781',
+      iframe:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.182952495526!2d-88.13640622434308!3d41.6733920782068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e58d72a8a1d2f%3A0x4485fc572f6039c2!2s748%20Dalton%20Ln%2C%20Bolingbrook%2C%20IL%2060490%2C%20USA!5e0!3m2!1sen!2sin!4v1695304183170!5m2!1sen!2sin',
+    },
+    {
+      id: '2',
       country: 'USA',
       flag: Usa,
       countrylogo: CountryUsa,
@@ -45,7 +58,7 @@ const Locations = () => {
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.182952495526!2d-88.13640622434308!3d41.6733920782068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e58d72a8a1d2f%3A0x4485fc572f6039c2!2s748%20Dalton%20Ln%2C%20Bolingbrook%2C%20IL%2060490%2C%20USA!5e0!3m2!1sen!2sin!4v1695304396073!5m2!1sen!2sin',
     },
     {
-      id: '2',
+      id: '4',
       country: 'India',
       flag: India,
       countrylogo: CountryInd,
@@ -153,7 +166,7 @@ const Locations = () => {
           ))}
         </div>
       </div>
-      <div className='hidden sm:flex flex-col gap-8 lg:grid lg:grid-cols-4 w-[90%] gap-x-5 justify-center base:py-[30px] max-w-[1440px] lg:py-[100px]'>
+      <div className='hidden sm:flex flex-col gap-8 lg:grid lg:grid-cols-4 w-[90%] gap-x-5 justify-center base:py-[30px] max-w-full lg:py-[100px]'>
         <div className='flex flex-col items-center lg:items-start'>
           <Link href='/'>
             <Image
