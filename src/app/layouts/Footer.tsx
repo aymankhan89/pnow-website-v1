@@ -235,10 +235,21 @@ const Locations = () => {
 const PrivacyPolicy = () => {
   return (
     <div className='flex base:flex-col md:flex-row lg:items-center justify-center lg:justify-between base:px-[30px] lg:px-[100px] py-[30px] text-[#ACB1E0] text-[16px] font-semibold'>
-      <div className='sm:hidden flex flex-col gap-4 text-center'>
+      <div className='sm:hidden flex flex-col gap-4 items-end text-right'>
         <div className='flex flex-col gap-2'>
           <p className='text-sm'>© ProficientNow 2023</p>
           <p className='text-sm'>All Rights Reserved.</p>
+        </div>
+        <div className='text-sm font-normal self-end'>
+          <span className='mr-1'>Developed by</span>
+          <Link
+            href='https://aymank-dev.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='font-bold underline hover:text-white transition-colors'
+          >
+            Ayman Khan
+          </Link>
         </div>
         <div className='flex flex-col gap-3 text-sm font-normal'>
           <Link
@@ -256,17 +267,26 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      <div className='hidden sm:flex base:flex-col md:flex-row gap-4'>
+      <div className='hidden sm:flex base:flex-col md:flex-row md:items-center md:justify-between w-full gap-4'>
         <div className='flex base:flex-wrap md:flex-row gap-5'>
           <p>© ProficientNow 2023</p>
           <p>All Rights Reserved.</p>
-        </div>
-        <div className='flex base:flex-row gap-4'>
           <Link className='font-normal' href='/privacypolicy'>
             Privacy Policy
           </Link>
           <Link className='font-normal' href='/termsandconditions'>
             Terms and Conditions
+          </Link>
+        </div>
+        <div className='flex'>
+          <span className='mr-1'>Developed by</span>
+          <Link
+            href='https://aymank-dev.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='font-bold underline hover:text-white transition-colors'
+          >
+            Ayman Khan
           </Link>
         </div>
       </div>
